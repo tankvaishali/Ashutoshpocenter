@@ -1,0 +1,76 @@
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.excard {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 3px solid white;
+    transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+    display: flex; /* Ensure the card content is flex */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+}
+
+.excard-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.excard-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    width: 100%; /* Ensure full width and height for hover effect */
+    height: 100%; /* Ensure full width and height for hover effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0); /* Initial background color */
+   /* Initially hidden */
+}
+
+.extitle {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    color: white; /* Set text color */
+}
+
+.exsubtitle {
+    text-transform: capitalize;
+    font-size: 7px;
+    font-weight: 100;
+}
+
+.excardinfo {
+    font-family: Arial, sans-serif;
+    font-size: 10px; /* Correct the font size declaration */
+    line-height: 11px;
+    margin: 2px 0px;
+}
+
+.excard:hover .blink {
+    animation: blink 1.3s infinite;
+}
+
+.excard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.excard:hover .excard-body {
+    animation: fadeInZoom 1s cubic-bezier(0.60, 0.5, 0.60, 5);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1; /* Make visible on hover */
+}

@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+:root {
+    --primarycolor: #32324c;
+    /* --primarycolor:rgba(109,110,138,1); */
+    --infocolor: #F17D28;
+    --promtfont: "promt", Sans-serif;
+    --spacefont: "Roboto", sans-serif;
+    --peracolor: #4E4E4E;
+    --footercolor: #2d2d51;
+}
+
+.maincolor {
+    font-weight: 600;
+    color: var(--primarycolor);
+  font-family: var(--spacefont);
+}
+
+.infocolor {
+    color: var(--infocolor);
+}
+
+/* header */
+/* dorpdown */
+/* .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--footercolor);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.offcanvas .dropdown-content a:hover,
+.dropdown-content a:hover {
+    background-color: #fed9be;
+    color: var(--infocolor);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #ffe4d1;
+    color: var(--infocolor);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.logoset {
+    width: 120px;
+    height: 60px;
+}
+
+.btn_hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_hover {
+    background-color: var(--primarycolor);
+}
+
+.btn_hover:hover {
+    background-color: var(--infocolor);
+}
+
+.navbar-nav.active,
+.nav-link.active,
+.headmenu:hover {
+    color: var(--infocolor) !important;
+    border-bottom: 1.8px solid var(--primarycolor);
+
+}
+
+.navbar-nav,
+.nav-link {
+    border-bottom: 1.8px solid transparent;
+}
+
+nav:hover {
+    background-color: white;
+}
+
+/*apointment date and time header */
+.timedate_css .react-datepicker {
+    display: flex !important;
+}
+
+.Datepickerdate::placeholder {
+    color: #2d2d51;
+}
+
+/* home page */
+.homebg_image,
+.contact_bg,
+.aboutus_image,
+.success_bgimages {
+    margin-top: -80px;
+    /* background-image:url("./assets/images/2020-12-18.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.homecontent {
+    font-size: 56px;
+    color: var(--primarycolor);
+    font-weight: 900;
+    font-family: var(--spacefont);
+}
+
+.homeline {
+    color: #F17D28;
+    font-size: 18px;
+}
+
+.headoneline {
+    color: var(--infocolor);
+    font-size: 18px;
+    font-family: var(--promtfont);
+    text-transform: uppercase;
+}
+
+.headtittle {
+    color: var(--primarycolor);
+    font-family: var(--spacefont);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: -0.6px;
+}
+
+.contentdata {
+    color: var(--peracolor);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+@media screen and (max-width:991px) {
+    .homebg_image {
+        margin-top: -78px;
+        /* height: 45vh; */
+    }
+
+
+
+}
+
+@media screen and (max-width:570px) {
+    .headtittle {
+        font-size: 30px !important;
+    }
+
+    .headoneline {
+        font-size: 17px !important;
+    }
+
+    .contentdata {
+        font-size: 15px !important;
+    }
+
+    .homecontent {
+        font-size: 50px !important;
+    }
+
+    .gujaratittle {
+        font-size: 38px;
+        color: var(--primarycolor);
+        font-family: var(--spacefont);
+        font-weight: 600;
+        line-height: 1.1em;
+        letter-spacing: -0.6px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .headtittle {
+        font-size: 26px !important;
+    }
+
+    .headoneline {
+        font-size: 12px !important;
+    }
+
+    .contentdata {
+        font-size: 13px !important;
+    }
+
+    .logoset {
+        width: 100px !important;
+    }
+
+    .maketext {
+        font-size: 12px;
+    }
+
+    .homecontent {
+        font-size: 35px !important;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .logoset {
+        width: 65px !important;
+        height: 50px;
+    }
+
+    .homecontent {
+        font-size: 30px !important;
+    }
+
+}
+
+/* Header */
+
+.homepage_shadow {
+
+    /* height: 100vh; */
+    width: 100%;
+
+}
+
+.homeshadow_color {
+    background-image: linear-gradient(180deg, #3434ec, #e0e0fc);
+    height: 300px;
+}

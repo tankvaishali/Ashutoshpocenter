@@ -1,0 +1,102 @@
+.prothethicsborder {
+  border-left: 5px solid #2d2d51;
+}
+.prothstisimg {
+  height: 410px !important;
+}
+@media screen and (max-width: 1200px) {
+  .prothstisimg {
+    height: 470px !important;
+  }
+}
+.prothstisimghand {
+  height: 420px !important;
+}
+@media screen and (max-width: 1200px) {
+  .prothstisimghand {
+    height: 470px !important;
+  }
+}
+.prothstisimg1 {
+  height: 450px !important;
+}
+@media screen and (max-width: 1200px) {
+  .prothstisimg1 {
+    height: 470px !important;
+    object-fit: fill !important;
+  }
+}
+.prothstisimg2 {
+  height: 460px !important;
+}
+@media screen and (max-width: 1200px) {
+  .prothstisimg2 {
+    height: 600px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+    .prothstisimg2{
+      height: auto !important;
+      object-fit: cover !important;
+    }
+}
+@media screen and (max-width: 768px) {
+  .prothstisimg , .prothstisimg1{
+    height: auto !important;
+    object-fit: cover !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .prothstisimghand{
+    height: auto !important;
+    object-fit: cover !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .prothsticshand1{
+    height: auto !important;
+    object-fit: cover !important;
+  }
+}
+  @media screen and (max-width: 1200px) {
+    .prothsticshand3 {
+      height: 430px !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .prothsticshand3{
+      height: auto !important;
+      object-fit: contain !important;
+    }
+  }
+
+  .orthotics1{
+    height: 350px !important;
+}
+@media screen and (max-width: 1200px) {
+    .orthotics1 {
+      height: 440px !important;
+      object-fit: cover !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .orthotics1{
+      height: auto !important;
+      object-fit: cover !important;
+    }
+  }
+  .oorthotics2 {
+    height: 500px !important;
+  }
+  @media screen and (max-width: 1200px) {
+    .oorthotics2 {
+      height: 400px !important;
+      /* object-fit: cover !important; */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .oorthotics2{
+      height: auto !important;
+      object-fit: cover !important;
+    }
+  }

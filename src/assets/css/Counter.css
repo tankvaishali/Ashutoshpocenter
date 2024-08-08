@@ -1,0 +1,218 @@
+.impact-section {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    position: relative;
+}
+
+.textured-background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.solid-background {
+    background-color: #4b286df0;
+    background-image: url("../images/happy-female-doctor-giving-high-fie-little-boy-who-came-with-father-hospital_637285-492.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    box-shadow: inset 0px 0px 1500px 1500px #15152ec8;
+    background-size: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+    color: white;
+    object-fit:cover ;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 160px 100%);
+    width: 100%;
+}
+
+
+.stat {
+    margin: 20px;
+    text-align: center;
+    border: 5px solid white;
+    padding: 20px;
+    background: #292948;
+    height: 150px;
+    width: 150px;
+    color: white;
+    border-radius: 50%;
+}
+
+.stat1,
+.stat2,
+.stat3 {
+    z-index: 1;
+}
+
+.stat1 {
+    position: relative;
+    left: 92px;
+}
+
+.stat2 {
+    position: relative;
+    left: 146px;
+}
+
+.stat3 {
+    position: relative;
+    left: 188px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 18px;
+}
+
+.impact-text {
+    text-align: end;
+}
+
+.impact-text h2 {
+    font-size: 36px;
+}
+
+.impact-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.ABC {
+    flex-direction: row;
+}
+
+@media screen and (max-width:1294px) {
+
+    .stat1 {
+        position: relative;
+        left: 70px;
+    }
+
+    .stat2 {
+        position: relative;
+        left: 127px;
+    }
+
+    .stat3 {
+        position: relative;
+        left: 178px;
+    }
+}
+
+
+@media screen and (max-width:1035px) {
+
+    .stat1 {
+        position: relative;
+        left: 49px;
+    }
+
+    .stat2 {
+        position: relative;
+        left: 108px;
+    }
+
+    .stat3 {
+        position: relative;
+        left: 155px;
+    }
+}
+
+@media screen and (max-width:926px) {
+
+    .solid-background {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 196px 100%);
+    }
+}
+
+
+@media screen and (max-width:850px) {
+
+
+
+    .solid-background {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 125px 100%);
+        text-align: center;
+    }
+
+    .stat1 {
+        position: relative;
+        left: 16px;
+    }
+
+    .stat2 {
+        position: relative;
+        left: 54px;
+    }
+
+    .stat3 {
+        position: relative;
+        left: 91px;
+    }
+}
+
+@media screen and (max-width:666px) {
+    .stat1 {
+        position: relative;
+        left: 2px;
+    }
+
+    .stat2 {
+        position: relative;
+        left: 32px;
+    }
+
+    .stat3 {
+        position: relative;
+        left: 79px;
+    }
+}
+
+@media screen and (max-width:593px) {
+    .impact-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .ABC {
+        flex-direction: column-reverse;
+    }
+
+    .solid-background {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        justify-content: center;
+    }
+
+    .impact-text {
+        text-align: center;
+    }
+
+    .stat1 {
+        position: relative;
+        left: 0;
+    }
+
+    .stat2 {
+        position: relative;
+        left: 0;
+    }
+
+    .stat3 {
+        position: relative;
+        left: 0;
+    }
+    .countercontent{
+        width: 100%;
+    }
+
+}

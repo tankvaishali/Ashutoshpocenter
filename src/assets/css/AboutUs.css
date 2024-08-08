@@ -1,0 +1,214 @@
+.aboutus_image {
+  background-image: url("../images//20160505_084351_resized_1.jpg");
+}
+.armprs_bgimage {
+  background-image: url("../images/hands-01\ \(4\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  /* height: 90vh; */
+  /* box-shadow: inset 0px 0px 1500px 1500px rgba(0, 0, 0, 0.326); */
+}
+
+/* aboutus content start */
+
+.about .about-img {
+  border-radius: 10px;
+}
+
+.about-img-inner {
+  margin-top: -120px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .about .about-img .about-img-inner {
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: -100px !important;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-img .about-img-inner {
+    width: 190px !important;
+    height: 190px !important;
+    margin-top: -80px !important;
+  }
+}
+@media (max-width: 400px) {
+  .about .about-img .about-img-inner {
+    width: 150px !important;
+    height: 150px !important;
+    margin-top: -80px !important;
+  }
+}
+
+/* aboutus content end */
+/* vision and misson start */
+
+.vision_bg {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: var(--footercolor);
+}
+
+.vision_bg::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-left: 100px solid var(--footercolor);
+  display: block;
+}
+
+.mission_bg {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: var(--footercolor);
+}
+
+.mission_bg::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-right: 100px solid var(--footercolor);
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .vision_bg::before,
+  .mission_bg::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision_bg,
+  .mission_bg {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .contmisionvisioin {
+    text-align: center !important;
+    padding: 15px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .vision_bg,
+  .mission_bg {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .contmisionvisioin {
+    text-align: center !important;
+    padding: 15px !important;
+  }
+}
+
+/* vision and misson end */
+/* redirect contactus start */
+
+.redirect_contact {
+  /* border: 50px solid #24243bb1; */
+  box-shadow: inset 0px 0px 1500px 1500px rgba(0, 0, 0, 0.326);
+}
+
+.about_contactimg img {
+  height: 290px;
+}
+
+/* redirect contactus end */
+
+/* out team start */
+
+.team_back {
+  width: 100%;
+  /* / height: 90vh; / */
+  background-color: var(--footercolor);
+}
+
+.iconbg {
+  transition: all 0.4s ease-in-out;
+}
+.iconbg:hover {
+  background-color: var(--infocolor) !important;
+  color: var(--footercolor) !important;
+  border-radius: 13px 3px 13px 3px !important;
+}
+.contteambg {
+  /* background-color: #9e9ec581; */
+}
+.teamimage {
+  position: relative;
+  display: inline-block;
+  transform: scale(1);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.imageteamsec {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.teamimage::before,
+.teamimage::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  border: 7px solid transparent;
+  transition: width 2s, height 2s, border-color 0.3s;
+  z-index: 1;
+}
+
+.teamimage::before {
+  top: 0;
+  left: 0;
+  border-top-width: 45%;
+  border-left-width: 45%;
+  border-top-color: white;
+  border-left-color: white;
+}
+
+.teamimage::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 45%;
+  border-right-width: 45%;
+  border-bottom-color: white;
+  border-right-color: white;
+}
+
+.icons-container {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.teamimage:hover .icons-container {
+  opacity: 1;
+}
+/* out team end */

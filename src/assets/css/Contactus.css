@@ -1,0 +1,202 @@
+.contact_bg {
+  background-image: url("../images/close-up-person-working-call-center_23-2149288224.jpg");
+}
+
+.contact_bgcolor {
+  background-color: #f7a582;
+}
+
+/* 
+.overlay2j {
+    height: 81vh;
+} */
+
+.contact_icon {
+  color: var(--footercolor);
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contacticon_hover:hover .contact_icon {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 450px) {
+  .contact_icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.section-form {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/150716-F-XE708-003.avif); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-us-form {
+  background-color: var(--footercolor);
+}
+
+.contact-us-form input,
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #fff;
+  border-radius: 6px;
+  color: #fff;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea::placeholder {
+  color: #fff;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid white;
+  color: white;
+  transition: all 1s;
+}
+
+.button:hover {
+  background-color: var(--infocolor);
+  border: 1px solid var(--infocolor) !important;
+}
+
+.positionx {
+  position: relative;
+  bottom: 80px;
+  z-index: 5;
+}
+
+.formsec {
+  position: relative;
+  right: 66px;
+  box-shadow: 0px 6px 11px var(--footercolor);
+}
+
+@media screen and (max-width: 768px) {
+  .formsec {
+    position: relative;
+    right: 0;
+    box-shadow: 0px 6px 11px var(--footercolor);
+  }
+}
+.img-2 {
+  filter: drop-shadow(10px 10px 5px #2d2d51ad);
+}
+/* .iconcolor {
+    color: white;
+} */
+
+.bgpost {
+  height: 190px;
+  background-image: url(../images/bgpost.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 1s;
+  color: var(--footercolor);
+}
+
+/* 
+.bgpost:hover {
+    color: white;
+    height: 190px;
+    background-image: url(../images/stabmenubghv.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+.bgpost:hover .icon {
+  background: var(--footercolor);
+  color: white;
+}
+
+.bgpost .iconhover2 {
+  transition: all 0.5s;
+}
+
+.bgpost:hover .iconhover2 {
+  transform: rotateY(180deg);
+}
+
+.contacticon_size {
+  font-size: 36px !important;
+}
+
+@media screen and (max-width: 998px) {
+  /* .contacticon_size {
+        font-size: 30px !important;
+    } */
+  /* 
+    .contacticon_size {
+        font-size: px !important;
+    } */
+
+  .contact_pera {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgpost {
+    background-size: 57% 100%;
+    padding-left: 107px;
+    padding-right: 107px;
+  }
+
+  .bgpost:hover {
+    background-size: 57% 100%;
+    padding-left: 107px;
+    padding-right: 107px;
+  }
+
+  /* .contacticon_size {
+        font-size: 40px !important;
+    } */
+
+  .contact_pera {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bgpost {
+    background-size: 90% 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .bgpost:hover {
+    background-size: 90% 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* .contacticon_size {
+        font-size: 45px !important;
+    } */
+
+  .contact_pera {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .contact_pera {
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,510 @@
+.innovation,
+.flip-card-back,
+.equipment,
+.manufacture,
+.haapy_image,
+.whiteservice_bg {
+  background-image: url("../images/whitebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.innovation {
+  background-attachment: fixed;
+}
+
+.inno_bckcolor {
+  background-color: rgba(255, 255, 255, 0.562);
+}
+
+.numbercolor {
+  color: var(--infocolor);
+  font-size: 60px;
+  font-weight: 500;
+  font-family: var(--spacefont);
+}
+
+.gujaratifont_size {
+  font-size: 12px !important;
+}
+
+.gujaratittle {
+  font-size: 33px;
+  color: var(--primarycolor);
+  font-family: var(--spacefont);
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: -0.6px;
+}
+
+
+
+/* carousel start */
+
+.background-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-container {
+  /* / position: relative; / */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-container .content {
+  /* / position: relative; / */
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.textshadow {
+  color: var(--primarycolor);
+  text-shadow: 2px 2px rgb(165, 163, 163);
+  transition: all 2s;
+  font-family: var(--spacefont);
+}
+.textshadowslogen{
+  color: var(--primarycolor);
+}
+
+.homebg_image {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-size: cover;
+  box-shadow: inset 10px 10px 1400px 100px  rgba(34, 34, 34, 0.559);
+}
+
+.homebg_image .overlay {
+  background: #f6f0f08f;
+}
+
+
+
+@media screen and (max-width:576px) {
+  .homebg_image .overlay {
+    margin-top: 60px;
+
+  }
+
+  .textanimation {
+    /* height: 100px; */
+    font-size: 30px;
+  }
+
+}
+
+
+/* carousel end */
+/* capability page */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 320px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card-back img {
+  width: 300px;
+  height: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-image: url("../images/digital-composite-image-human-skeleton-running-against-gray-background_1048944-26942851.jpg");
+  transform: rotateY(180deg);
+  box-shadow: inset 1500px 1500px rgba(0, 0, 0, 0.516);
+}
+
+.manufacure {
+  background-image: url("../images/modern-medical-technology-young-woman-making-artificial-robot-hand_63762-12621.jpg");
+  transform: rotateY(180deg);
+  box-shadow: inset 1500px 1500px rgba(0, 0, 0, 0.436);
+}
+
+.equipment {
+  background-image: url("../images/close-up-man-with-mechanical-leg-running-sportsman-blue-shorts-white-sneakers-photographed-jog-sport-hobby-disability-concept_74855-22852.jpg");
+  transform: rotateY(180deg);
+  box-shadow: inset 1500px 1500px rgba(0, 0, 0, 0.637);
+}
+
+.head_image {
+  width: 50%;
+  height: 50%;
+}
+
+/* products start */
+.ProductHover {
+  transition: all 0.3s ease-in-out;
+}
+
+.ProductHover:hover {
+  transform: translate(-3px);
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.689);
+}
+
+.product_slickdot .slick-dots {
+  display: none !important;
+}
+
+/* products end */
+/* services page */
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated-image {
+  display: block;
+  margin: 0 auto;
+  animation: upDown 3s ease-in-out infinite;
+}
+
+.service_image {
+  height: 125px;
+  width: 125px;
+  margin: 0 auto;
+  border: 5px solid transparent;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.servicedata {
+  border-bottom: 1.5px solid rgba(128, 128, 128, 0.217);
+  transition: all 0.4s ease-in-out;
+  width: fit-content;
+}
+
+.servicedata:hover .service_image {
+  border: 5px solid #44457773;
+}
+.linetitle,.linetitle1{
+  position: relative;
+}
+.linetitle::after{
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--infocolor);
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0px;
+  left: 0;
+}
+.linetitle1::after{
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--infocolor);
+  position: absolute;
+  border-radius: 5px;
+  bottom: -7px;
+  left: 0;
+}
+.linecenter {
+  position: relative;
+  text-align: center; /* This centers the text */
+}
+.linecenter::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--infocolor);
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%); /* This centers the line */
+}
+.btnhovercolor {
+  background-color: var(--primarycolor);
+  transition: all 0.3s ease-in-out;
+}
+
+.btnhovercolor:hover {
+  background-color: var(--infocolor);
+
+}
+
+/* WhyChoose page */
+
+
+.whatsappcolor {
+  background-color: #00c932df;
+  width: fit-content;
+}
+
+/* happy page */
+.haapy_image {
+  background-image: url("../images/young-doctor-getting-ready-work_23-2149393694.jpg");
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.happybck_color {
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.411), white);
+  width: 100%;
+}
+
+.ptbg_color {
+  background-color: #e7f3ffbb;
+}
+
+/* comments page */
+.combg_color {
+  background-color: var(--footercolor);
+  padding-bottom: 190px !important;
+
+}
+
+.lightbck_color {
+  background-color: #8586bc1f;
+}
+
+.custom-dots .slick-dots li button:before {
+  font-size: 16px;
+  /* Increase font size to make dots larger */
+  width: 18px;
+  /* Set width */
+  height: 18px;
+  /* Set height */
+}
+
+.custom-dots .slick-dots li.slick-active button:before {
+  color: var(--footercolor);
+  /* Change color of active dot */
+}
+
+.comments_cardhover {
+  transition: all 0.3s ease-in-out;
+}
+
+.comments_cardhover:hover {
+  transform: translateY(-15px);
+}
+.main-card{
+  height: 280px;
+}
+.custom-card{
+  height: 55% !important;
+}
+@media (max-width: 1200px) {
+  .custom-card {
+    height: 60% !important;
+  }
+  .main-card{
+    height: 310px !important;
+  }
+}
+@media (max-width: 767px) {
+  .custom-card {
+    height: 70% !important;
+  }
+  .main-card{
+    height: 390px !important;
+  }
+}
+@media (max-width: 700px) {
+  .custom-card {
+    height: 50% !important;
+  }
+  .main-card{
+    height: 250px !important;
+  }
+}
+@media (max-width: 400px) {
+  .custom-card {
+    height: 60% !important;
+  }
+  .main-card{
+    height: 300px !important;
+  }
+}
+
+/* footer */
+
+.background_footer {
+  background-color: #2d2d51 !important;
+}
+
+.footmenu,
+.iconname {
+  transition: all 0.4s ease-in-out;
+}
+
+.fttitle {
+  position: relative;
+}
+
+.fttitle::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  top: 32px;
+  left: 1px;
+  border-radius: 10px;
+  background-color: #8586bc;
+  position: absolute;
+}
+
+.footmenu:hover {
+  color: var(--infocolor) !important;
+}
+
+.text-orange {
+  color: var(--infocolor);
+  font-size: 20px;
+}
+
+.iconname:hover {
+  color: var(--infocolor) !important;
+}
+
+.footcolor_pera {
+  color: rgb(167, 167, 167);
+}
+
+@media screen and (max-width:991px) {
+  .service_image {
+    width: 280px !important;
+    height: 280px !important;
+
+  }
+
+  .servicedata {
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width:550px) {
+  .numbercolor {
+    font-size: 45px;
+  }
+
+  .service_image {
+    width: 260px !important;
+    height: 260px !important;
+
+  }
+
+  .auto {
+    width: fit-content !important;
+    margin: 0 auto !important;
+  }
+
+  .combg_color {
+    padding-bottom: 130px !important;
+  }
+
+  .gujaratittle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .numbercolor {
+    font-size: 40px;
+  }
+
+  .service_image {
+    width: 225px !important;
+    height: 225px !important;
+
+  }
+
+  .gujaratittle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .flip-card {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .flip-card-back img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .gujaratittle {
+    font-size: 20px;
+  }
+}
+
+/* Facility */
+
+.facility_image {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #2d2d51;
+  padding: 10px;
+  border-radius: 0px 30px 0px 30px;
+}
+.facility_image img{
+  border-radius: 0px 30px 0px 30px;
+}
+.image-title {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: #2d2d51;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  border-radius: 20px 20px 0px 0px;
+  transition: bottom 0.5s ease;
+}

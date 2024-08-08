@@ -1,0 +1,40 @@
+.success_bgimages {
+  background-image: url("../images/65c0f5708a0ab248120eeb71_different-types-of-custom-orthotics.jpg");
+  /* object-position: top center !important; */
+  /* background-position: 0px -69px !important; */
+}
+
+/* @media screen and (max-width: 450px) {
+  .success_bgimages {
+    background-image: url("../images/successbgimg2.jpg");
+    object-position: top center !important;
+    background-position: -120px -11px !important;
+  }
+} */
+
+.background {
+  background-color: #2d2d51;
+}
+
+.subtitle1 {
+  background-color: #332b5d;
+  background-image: url(https://www.ispoint.org/wp-content/uploads/2021/10/dot.png);
+  background-repeat: repeat;
+  background-position: left top;
+  background-attachment: scroll;
+  background-size: auto;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+}
+
+.overHeight {
+  height: 300px;
+}
+
+@media screen and (max-width: 576px) {
+  .overHeight {
+    height: 350px;
+  }
+}
